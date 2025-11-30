@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styly.css">
+  <title>Video</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <video id="video" src="21.mp4" controls></video>
+
+  <script>
+    const btn = document.getElementById('playBtn');
+    const video = document.getElementById('video');
+
+    btn.addEventListener('click', () => {
+      video.play();
+      btn.style.display = 'none'; // skryje tlačítko po spuštění
+    });
+  </script>
+</body>
+</html>
